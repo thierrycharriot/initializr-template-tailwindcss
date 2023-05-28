@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>initializr-template-tailwindcs</title>
+    <link rel="stylesheet" href="assets/dist/output.css">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <style>
+        @media only screen and (max-width: 1023px) {
+            #check:checked~#menu {
+                display: block;
+            }
+        }
+        @media only screen and (min-width: 1024px) {
+            .hamburger {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body class="" id="page-top">
+    <header class="bg-sky-300 lg:border-solid lg:border-b-[18px] lg:border-sky-600 shadow-lg text-center">
+        <div class="navbar container mx-auto lg:px-6 lg:flex lg:justify-between lg:items-center">
+        <h1 class="text-xl lg:text-2xl font-semibold py-3 lg:py-0">intializr-template-tailwindcss</h1>
+        <nav class="">
+            <input type="checkbox" id="check" class="hidden">
+            <label class="bg-sky-600 text-gray-50 hover:bg-sky-900 py-3 lg:py-6 lg:w-32 flex justify-between px-3 hamburger hover:underline hover:transition hover:duration-300" for="check"><span>Navigation</span><span>&#9776;</span></label>
+            <ul class="lg:flex lg:flex-wrap lg:space-x-2 hidden" id="menu">
+                <li><a class="bg-sky-600 block text-gray-50 hover:bg-sky-900 py-3 lg:py-6 lg:w-32 hover:underline hover:transition hover:duration-300" href="#">Page 001</a></li>
+                <li><a class="bg-sky-600 block text-gray-50 hover:bg-sky-900 py-3 lg:py-6 lg:w-32 hover:underline hover:transition hover:duration-300" href="#">Page 002</a></li>
+                <li><a class="bg-sky-600 block text-gray-50 hover:bg-sky-900 py-3 lg:py-6 lg:w-32 hover:underline hover:transition hover:duration-300" href="#">Page 003</a></li>
+            </ul>
+        </nav>
+        </div>    
+    </header>
+    
+    <div class="container mx-auto">
+        <main class="my-3 mx-3 lg:flex lg:flex-row">
+            <article class="lg:mx-3 lg:first:mt-0 basis-2/3">
+                <header class="bibi-card lg:mt-0">
+                    <h1 class="text-2xl font-semibold">article header h1</h1>
+                    <p class="my-3">I am the first article</p>
+					<form class="">
+						<textarea class="w-full my-3 p-3 border-2 border-gray-300 rounded-md" placeholder="Some text..."></textarea>
+					</form>
+                    <input type="submit" class="bibi-btn bg-green-300 hover:bg-green-600" value="Submit">
+                </header>
+                <section class="bibi-card">
+                    <h2 class="text-xl font-semibold">article section h2</h2>
+                    <p class="my-3">I am the second article</p>
+					<table class="w-full bg-gray-100 my-3 cursor-pointer">
+						<tr class="border-b bg-gray-300">
+							<th class="py-3">colonne 01</th>
+							<th class="py-3">colonne 02</th>
+							<th class="py-3">colonne 03</th>
+						</tr>
+						<tr class="border-b hover:bg-gray-300">
+							<td class="py-3 px-3">cellule 01</td>
+							<td class="py-3 px-3">cellule 02</td>
+							<td class="py-3 px-3">cellule 03</td>
+						</tr>
+						<tr class="border-b hover:bg-gray-300 bg-gray-200">
+							<td class="py-3 px-3">cellule 04</td>
+							<td class="py-3 px-3">cellule 05</td>
+							<td class="py-3 px-3">cellule 06</td>
+						</tr>
+						<tr class="border-b hover:bg-gray-300">
+							<td class="py-3 px-3">cellule 07</td>
+							<td class="py-3 px-3">cellule 08</td>
+							<td class="py-3 px-3">cellule 09</td>
+						</tr>
+					</table>
+                </section>
+                <section class="bibi-card">
+                    <h2 class="text-xl font-semibold">article section h2</h2>
+					<p class="my-3">I am the third article</p>
+					<form action="#">
+						<label class="block" for="firstname">First name</label>
+						<input class="w-full bg-gray-100 my-3 px-3 py-2 border-2 border-gray-300 rounded-md" type="text" id="firstname" name="firstname" placeholder="First name...">
+                        <label for="lastname">Last name</label>
+						<input class="w-full bg-gray-100 my-3 px-3 py-2 border-2 border-gray-300 rounded-md" type="text" id="lastname" name="lastname" placeholder="Last name...">
+						<label for="country">Country</label>
+						<select class="w-full bg-gray-100 my-3 px-3 py-2 border-2 border-gray-300 rounded-md" id="country" name="country">
+							<option value="france">France</option>
+							<option value="belgique">Belgique</option>
+							<option value="suisse">Suisse</option>
+						</select>
+						<input type="submit" class="bibi-btn bg-green-300 hover:bg-green-600" value="Submit">
+					</form>
+                </section>
+                <section class="bibi-card">
+                    <h2 class="text-xl font-semibold">article section h2</h2>
+					<p class="my-3">I am the fourth article</p>
+					<button class="bibi-btn bg-red-300 hover:bg-red-600">Danger</button>
+					<button class="bibi-btn bg-blue-300 hover:bg-blue-600">Info</button>
+					<button class="bibi-btn bg-zinc-300 hover:bg-zinc-600">Normal</button>
+					<button class="bibi-btn bg-green-300 hover:bg-green-600">Success</button>
+					<button class="bibi-btn bg-orange-300 hover:bg-orange-600">Warning</button>
+                </section>
+                <footer class="bibi-card">
+                    <h3 class="text-lg font-semibold">article footer h3</h3>
+                    <p class="my-3">I am the fifth article</p>
+					<pre><code class="block w-full bg-slate-900 text-lime-300 my-3 p-3">&lt;h1>Test code&lt;/h1></code></pre>
+                </footer>
+            </article>
+
+            <aside class="bg-green-300 border-solid border-t-[18px] border-green-600 shadow-lg rounded-b-lg p-3 basis-1/3">
+                <h3 class="text-lg font-semibold">aside</h3>
+                <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices.</p>
+            </aside>
+        </main>
+    </div>
+
+	<a href="#page-top" class="bibi-elevator" id="btn-top"
+    title="Click to go back to the top of this damn page!">Back to Top</a>
+
+    <footer class="bg-green-300 text-center py-9 border-solid border-t-[18px] border-green-600">
+        <h3 class="text-lg font-semibold">intializr-template-tailwindcss</h3>
+    </footer>
+
+    <script src="assets/dist/scripts.js"></script>
+</body>
+</html>
