@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bibi-card {
+    @apply shadow-lg bg-gray-50 rounded-b-lg my-6 p-3;
+}
+
+.bibi-btn {
+    @apply inline-block my-3 py-1 w-24 border-2 border-gray-600 rounded-md hover:text-white hover:transition hover:duration-300 hover:underline; 
+}
+
+.bibi-elevator {
+    @apply inline-block my-3 py-1 w-36 border-2 border-gray-600 rounded-md bg-green-600 hover:bg-green-900 hover:text-white text-center fixed right-3 bottom-12 z-50 hover:transition hover:duration-300 hover:underline;     
+}
+
